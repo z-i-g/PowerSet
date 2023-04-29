@@ -102,7 +102,7 @@ public class PowerSet {
     public boolean isSubset(PowerSet set2)
     {
         if (set2.size() == 0) {
-            return false;
+            return true;
         }
 
         if (this.size() == 0) {

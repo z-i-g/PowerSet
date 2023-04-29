@@ -256,11 +256,11 @@ class PowerSetTest {
     @Test
     public void isSubset_performanceTest() {
         PowerSet powerSet1 = new PowerSet();
-        for (int i = 0; i < 20000; i++) {
-            powerSet1.put(i + " val1");
+        for (int i = 0; i < 10000; i++) {
+            powerSet1.put(i + " val");
         }
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 20000; i++) {
             powerSet.put(i + " val");
         }
         assertTrue(powerSet.isSubset(powerSet1));
